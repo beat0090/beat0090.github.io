@@ -6,24 +6,32 @@ a:visited {color:#FC3; text-decoration: none;}
 a:hover {color:#FF8000; text-decoration: none;}
 a:active {color:#FF8000; text-decoration: none;}
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 html {
-	width: 100%;
 	font-size: 100%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	background-image: url(../images/background1.jpg);
 	background-repeat: repeat;
+}
 
+body {
+	margin: 1em;
 }
 
 h1 {
 	font-size: 30px;
 	color:#066;
-	
-	background-color:3CF;
 }
 
 nav {
-	padding-left: -15%; /*not working? ...like everything else*/
+	
 }
 
 
@@ -33,24 +41,38 @@ nav {
 }
 
 p {
+	margin: 0;
 	color:#066;	
 	line-height:150%;
 	font-size: .75;
 	
 	background-color:#fff;
 	opacity: 0.8;
-	padding: 1% 1% 1% 1%;
 	
 }
 
-img {
-	width: 100%;
-	padding: 2%;
+figure {
+	margin: 1em 0;
 }
 
+img {
+	margin: 0;
+}
 
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	display: inline;
+	margin-right: 2em;
+	float: left;
+	overflow: hidden;
+}
 
 .contact {
+	margin: 1em 0;
 	display: inline;
 	background-color:#fff;
 	opacity: 0.8;
